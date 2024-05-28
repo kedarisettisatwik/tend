@@ -1,0 +1,55 @@
+.nav.board{
+    width:100vw;
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+.nav .header{
+    position: relative;
+    width:100%;
+    list-style: none;
+    padding:10px 0;
+    overflow-x: auto;
+}
+.nav .header::-webkit-scrollbar{
+    appearance: none;
+    height:0px;
+}
+.nav .header ul{
+    min-width:530px;
+}
+.nav .header li{
+    display: inline;
+    padding:10px;
+    margin: 0 10px;
+    font-size:14px;
+    cursor: pointer;
+    transition:0.3s;
+    color: black;
+}
+.nav .header li.active{
+    color: #4ea6b8;
+    font-size: 17px;
+}
+.nav .header li:hover{
+    color: #4ea6b8;
+}
+.nav .header i{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    display:none;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    font-size:20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media only screen and (max-width: 580px)  {
+    .nav .header{
+        align-items: flex-start;
+    }
+}

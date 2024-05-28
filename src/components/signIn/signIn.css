@@ -1,0 +1,134 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.signIn{
+    width:100%;
+    min-height:100vh;
+    flex-direction: row;
+}
+.intro, .form1,.intro, .form2{
+    width:50%;
+    min-height:100vh;
+    position: relative;
+    padding:20px;
+}
+.intro{
+    background-image:linear-gradient(45deg, rgb(0,0,0,0.7), rgb(0,0,0,0)), url("../assests/bg1.jpg");
+    background-size: 800px;
+    color: white;
+}
+.intro div,.intro span{
+    width:100%;
+    text-align: center;
+    font-size:13px;
+}
+.intro p{
+    position: absolute;
+    top:20px;
+    left:20px;
+}
+.intro h1{
+    font-family: "Poetsen One", sans-serif;
+    letter-spacing:2px;
+    font-size:45px;
+    margin:10px 0;
+}
+
+.form1 h1,.form2 h1{
+    color:#4ea6b8;
+    font-size:20px;
+    margin:20px 0;
+}
+.form1 input,
+.form2 input{
+    min-width:270px;
+    padding:10px;
+    font-size:15px;
+    outline: none;
+    border: 2px solid white;
+    background-color: #f2f2f2;
+    position:relative;
+    margin:5px 0;
+    transition:0.4s;
+}
+
+.form1 input:focus,
+.form2 input:focus{
+    background-color: white;
+    border: 2px solid #4ea6b8;
+}
+
+.form1 i,.form2 i{
+    margin:15px 0;
+    font-style: normal;
+    width:100%;
+    text-align: right;
+    font-size: 13px;
+    cursor: pointer;
+    transition:0.2s;
+}
+.form1 i{
+    margin:15px 0 5px 0;
+}
+.form1 i:nth-of-type(2){
+    margin-top:5px;
+    margin-bottom:15px;
+}
+.form1 i:hover,.form2 i:hover{
+    color: #4ea6b8;
+}
+
+.form1 .box span,.form2 .box span{
+    font-size:12px;
+    display: block;
+}
+.form1 .box, .form2 .box{
+    margin: 5px 0;
+}
+
+.form1 input[type="submit"],
+.form2 input[type="submit"]{
+    background-color: #4ea6b8;
+    padding:10px;
+    font-size:15px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top:5px;
+}
+.form1 p, .form2 p{
+    margin:20px 0;
+    font-size:13px;
+    cursor: pointer;
+    transition:0.3s;
+}
+.form1 p:hover, .form2 p:hover{
+    color: #4ea6b8;
+}
+
+.form1 .error, .form2 .error{
+    font-size:13px;
+    font-weight: bold;
+    letter-spacing:1px;
+    color: white;
+    background-color: #4ea6b8;
+    opacity:0.7;
+}
+.form1 .error div, .form2 .error div{
+    padding:15px 10px;
+}
+
+@media only screen and (max-width: 880px) {   
+    .signIn{
+        flex-direction:column;
+        justify-content: flex-start;
+    }
+    .intro, .form1,.form2{
+        width:100%;
+        min-height:300px;
+    }
+}
